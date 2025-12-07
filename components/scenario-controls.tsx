@@ -53,7 +53,7 @@ export default function ScenarioControls({
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="flex flex-col sm:flex-row gap-4">
-          <div className="flex-grow grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grow grid grid-cols-1 md:grid-cols-3 gap-3">
             {scenarios.map((scenario) => {
               const multiplier = scenarioSettings[scenario.name]?.multiplier || 1.0
               const estimatedPercentage = Math.round(
