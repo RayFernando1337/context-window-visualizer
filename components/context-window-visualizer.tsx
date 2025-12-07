@@ -38,7 +38,7 @@ export default function ContextWindowVisualizer() {
   const [agents, setAgents] = useState<Agent[]>(INITIAL_AGENTS);
   const [isSimulating, setIsSimulating] = useState(false);
   const [showAdvanced, setShowAdvanced] = useState(false);
-  const [scenarioSettings, setScenarioSettings] = useState({
+  const [scenarioSettings, setScenarioSettings] = useState<Record<string, { multiplier: number }>>({
     "Simple Query": { multiplier: 0.4 },
     "Code Generation": { multiplier: 0.8 },
     "Complex Debugging": { multiplier: 1.0 },
